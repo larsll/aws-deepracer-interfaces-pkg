@@ -3,6 +3,8 @@
 # This message is used to send motor throttle and servo steering angle
 # ratios with respect to the device calibration. It can also be used to
 # send raw PWM values for angle and throttle.
+std_msgs/Header header
+std_msgs/Header correlation
 float32 angle       # Angle ratio w.r.t steering_max/steering_min
                     # in calibration file or raw PWM value to be sent
                     # to the servo.
